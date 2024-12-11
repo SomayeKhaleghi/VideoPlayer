@@ -65,6 +65,8 @@ Pause and Stop: Use the Pause and Stop buttons to control the video playback.
 
 ### Screenshot
 ![Screenshot_20241211-190405](https://github.com/user-attachments/assets/924c73eb-cf67-4909-944f-2edfa1da230f)
+
+
 ![Screenshot_20241211-190416](https://github.com/user-attachments/assets/4ce738bd-aa88-4ad5-955c-a874d3eb37ab)
 
 
