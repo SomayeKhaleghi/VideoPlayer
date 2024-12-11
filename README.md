@@ -20,20 +20,6 @@ This project serves as a demonstration of building multimedia applications using
 
 ---
 
-## Project Structure
-
-The project is organized as follows:
-
-VideoPlayer/ 
-├── src/ │ 
-├── main.cpp # Application entry point 
-│ └── main.qml # Main user interface (QML file)
-├── resources.qrc # Resources like images or icons 
-├── CMakeLists.txt # CMake configuration for building the project 
-└── README.md # Project documentation
-
----
-
 ## Installation
 
 ### Prerequisites
