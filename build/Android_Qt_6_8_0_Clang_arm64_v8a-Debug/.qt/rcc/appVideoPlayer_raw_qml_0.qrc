@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/VideoPlayer/">
+    <file alias="Main.qml">/root/VideoPlayer/Main.qml</file>
+    <file alias="resources.qrc">/root/VideoPlayer/resources.qrc</file>
+  </qresource>
+</RCC>
+

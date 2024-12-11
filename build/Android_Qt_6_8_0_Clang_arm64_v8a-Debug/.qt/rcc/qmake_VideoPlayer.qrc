@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/VideoPlayer">
+    <file alias="qmldir">/root/VideoPlayer/build/Android_Qt_6_8_0_Clang_arm64_v8a-Debug/VideoPlayer/qmldir</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,5 @@
+module VideoPlayer
+typeinfo appVideoPlayer.qmltypes
+prefer :/qt/qml/VideoPlayer/
+Main 1.0 Main.qml
+
