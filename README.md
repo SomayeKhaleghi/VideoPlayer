@@ -24,7 +24,13 @@ This project serves as a demonstration of building multimedia applications using
 
 The project is organized as follows:
 
-VideoPlayer/ ├── src/ │ ├── main.cpp # Application entry point │ └── main.qml # Main user interface (QML file) ├── resources.qrc # Resources like images or icons ├── CMakeLists.txt # CMake configuration for building the project └── README.md # Project documentation
+VideoPlayer/ 
+├── src/ │ 
+├── main.cpp # Application entry point 
+│ └── main.qml # Main user interface (QML file)
+├── resources.qrc # Resources like images or icons 
+├── CMakeLists.txt # CMake configuration for building the project 
+└── README.md # Project documentation
 
 ---
 
@@ -48,6 +54,7 @@ Clone the project to your local machine using the following command:
 ```bash
 git clone https://github.com/your-username/VideoPlayer.git
 cd VideoPlayer
+````
 
 2. Install Dependencies
 Ensure that you have Qt 6.8.0 installed with the required modules (Qt Multimedia, Qt Quick, Qt Android Extras for Android).
