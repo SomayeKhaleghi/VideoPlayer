@@ -42,13 +42,13 @@ git clone https://github.com/your-username/VideoPlayer.git
 cd VideoPlayer
 ````
 
-2. Install Dependencies
+#### 2. Install Dependencies
 Ensure that you have Qt 6.8.0 installed with the required modules (Qt Multimedia, Qt Quick, Qt Android Extras for Android).
 
-3. Build the Project
+#### 3. Build the Project
 Set up the Android Toolchain and configure it within the QMake project.
 
-4. Install the APK on your device
+#### 4. Install the APK on your device
 Ensure your Android device is connected via USB (with debugging enabled) or use an Android emulator.
 Run the app on your Android device/emulator.
 
