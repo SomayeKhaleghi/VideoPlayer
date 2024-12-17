@@ -46,7 +46,7 @@ cd VideoPlayer
 Ensure that you have Qt 6.8.0 installed with the required modules (Qt Multimedia, Qt Quick, Qt Android Extras for Android).
 
 #### 3. Build the Project
-##### Set up the Android Toolchain and configure it. Run below commands:
+Set up the Android Toolchain and configure it. Run below commands:
 
 ```bash
 /opt/Qt/Tools/CMake/bin/cmake -S /root/VideoPlayer -B /root/VideoPlayer/build/Android_Qt_6_8_0_Clang_arm64_v8a-Debug -DCMAKE_CXX_FLAGS_INIT:STRING= -DANDROID_PLATFORM:STRING=android-23 -DQT_QMAKE_EXECUTABLE:FILEPATH=/opt/Qt/6.8.0/android_arm64_v8a/bin/qmake -DCMAKE_GENERATOR:STRING=Ninja -DQT_NO_GLOBAL_APK_TARGET_PART_OF_ALL:BOOL=ON -DCMAKE_PREFIX_PATH:PATH=/opt/Qt/6.8.0/android_arm64_v8a -DCMAKE_BUILD_TYPE:STRING=Debug -DANDROID_ABI:STRING=arm64-v8a -DCMAKE_C_COMPILER:FILEPATH=/root/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -DQT_USE_TARGET_ANDROID_BUILD_DIR:BOOL=ON -DCMAKE_CXX_COMPILER:FILEPATH=/root/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -DANDROID_USE_LEGACY_TOOLCHAIN_FILE:BOOL=OFF -DCMAKE_FIND_ROOT_PATH:PATH=/opt/Qt/6.8.0/android_arm64_v8a -DANDROID_NDK:PATH=/root/Android/ndk/26.1.10909125 -DANDROID_STL:STRING=c++_shared -DCMAKE_TOOLCHAIN_FILE:FILEPATH=/root/Android/ndk/26.1.10909125/build/cmake/android.toolchain.cmake -DQT_HOST_PATH:PATH=/opt/Qt/6.8.0/gcc_64 -DANDROID_SDK_ROOT:PATH=/root/Android
@@ -80,8 +80,6 @@ Ensure your Android device is connected via USB (with debugging enabled) or use 
 Run the app on your Android device/emulator.
 
 ![Screenshot from 2024-12-17 11-35-35](https://github.com/user-attachments/assets/5611b039-497c-45c7-bcf9-5be070e47ac1)
-
-
 
 
 
