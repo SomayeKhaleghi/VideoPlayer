@@ -46,36 +46,33 @@ cd VideoPlayer
 Ensure that you have Qt 6.8.0 installed with the required modules (Qt Multimedia, Qt Quick, Qt Android Extras for Android).
 
 #### 3. Build the Project
-##### Set up the Android Toolchain and configure it. wn
+##### Set up the Android Toolchain and configure it. Run below commands:
+
+```bash
 /opt/Qt/Tools/CMake/bin/cmake -S /root/VideoPlayer -B /root/VideoPlayer/build/Android_Qt_6_8_0_Clang_arm64_v8a-Debug -DCMAKE_CXX_FLAGS_INIT:STRING= -DANDROID_PLATFORM:STRING=android-23 -DQT_QMAKE_EXECUTABLE:FILEPATH=/opt/Qt/6.8.0/android_arm64_v8a/bin/qmake -DCMAKE_GENERATOR:STRING=Ninja -DQT_NO_GLOBAL_APK_TARGET_PART_OF_ALL:BOOL=ON -DCMAKE_PREFIX_PATH:PATH=/opt/Qt/6.8.0/android_arm64_v8a -DCMAKE_BUILD_TYPE:STRING=Debug -DANDROID_ABI:STRING=arm64-v8a -DCMAKE_C_COMPILER:FILEPATH=/root/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -DQT_USE_TARGET_ANDROID_BUILD_DIR:BOOL=ON -DCMAKE_CXX_COMPILER:FILEPATH=/root/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -DANDROID_USE_LEGACY_TOOLCHAIN_FILE:BOOL=OFF -DCMAKE_FIND_ROOT_PATH:PATH=/opt/Qt/6.8.0/android_arm64_v8a -DANDROID_NDK:PATH=/root/Android/ndk/26.1.10909125 -DANDROID_STL:STRING=c++_shared -DCMAKE_TOOLCHAIN_FILE:FILEPATH=/root/Android/ndk/26.1.10909125/build/cmake/android.toolchain.cmake -DQT_HOST_PATH:PATH=/opt/Qt/6.8.0/gcc_64 -DANDROID_SDK_ROOT:PATH=/root/Android
-
+```
 ![Screenshot from 2024-12-17 10-07-56](https://github.com/user-attachments/assets/8b650639-cc79-490f-b4fb-62b368830e24)
-
 
 
 ![Screenshot from 2024-12-17 10-08-13](https://github.com/user-attachments/assets/4ce85ee6-1bb8-462b-98c8-3dec71b34e01)
 
 
-
-
-###### /opt/Qt/Tools/CMake/bin/cmake --build /root/VideoPlayer/build/Android_Qt_6_8_0_Clang_arm64_v8a-Debug --target all
-
-
+```bash
+ /opt/Qt/Tools/CMake/bin/cmake --build /root/VideoPlayer/build/Android_Qt_6_8_0_Clang_arm64_v8a-Debug --target all
+```
 
  ![Screenshot from 2024-12-17 11-45-00](https://github.com/user-attachments/assets/6e305a16-4323-4c28-808a-cf37d101cc61)
 
 
-
-
-###### make apk by this command: 
-
+Make apk by this command: 
+```bash
 /opt/Qt/6.8.0/gcc_64/bin/androiddeployqt --input /root/VideoPlayer/build/Android_Qt_6_8_0_Clang_arm64_v8a-Debug/android-appVideoPlayer-deployment-settings.json --output /root/VideoPlayer/build/Android_Qt_6_8_0_Clang_arm64_v8a-Debug/android-build-appVideoPlayer --android-platform android-34 --jdk /usr/lib/jvm/java-1.17.0-openjdk-amd64 --gradle
+```
+
 ![Screenshot from 2024-12-17 10-17-17](https://github.com/user-attachments/assets/7bff9d15-4e8b-4743-9459-a72213822c98)
 
 
 ![Screenshot from 2024-12-17 10-17-33](https://github.com/user-attachments/assets/37ea9dc8-ad7c-478a-827a-92e1fa4a4adf)
-
-
 
 
 #### 4. Install the APK on your device
